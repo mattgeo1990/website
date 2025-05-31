@@ -5,9 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matthew Allen | Geoscientist</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: system-ui, sans-serif;
+      color: #333;
+      position: relative;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-top: 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      z-index: 2;
+      position: relative;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.9);
+      z-index: 2;
+      position: relative;
+    }
+    .video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: 0;
+      object-fit: cover;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.6);
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
+  <video autoplay muted loop class="video-background">
+    <source src="img/background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay"></div>
+
   <header>
+    <img src="img/profile.jpg" alt="Matthew Allen">
     <h1>Matthew Allen</h1>
     <p>Postdoctoral Researcher | Stable Isotope Geochemist | Paleoclimate</p>
   </header>
