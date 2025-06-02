@@ -1,24 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Temporarily Offline</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew Allen | Geoscientist</title>
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    body {
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: system-ui, sans-serif;
+      background: #1c1c1c;
+      color: #f2f2f2;
+    }
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: url("img/panorama.jpg") center center/cover no-repeat;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
-      font-family: sans-serif;
-      background: #f3f3f3;
+      justify-content: flex-end;
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+    .hero img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      background: #fff;
     }
     h1 {
-      color: #444;
+      font-size: 2rem;
+      margin: 0.5rem 0 0;
+      color: #90caf9;
+    }
+    p.subtitle {
+      margin: 0.25rem 0 1rem;
+      font-size: 1rem;
+      color: #e0e0e0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: #2a2a2a;
+      position: sticky;
+      top: 0;
+      z-index: 3;
+    }
+    nav a {
+      text-decoration: none;
+      color: #f0f0f0;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #90caf9;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #2b2b2b;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      padding: 2rem;
+      background: #2a2a2a;
+      color: #ccc;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <h1>This site is temporarily offline. Please check back soon.</h1>
+  <div class="hero">
+    <img src="img/profile.png" alt="Matthew Allen">
+    <h1>Matthew Allen</h1>
+    <p class="subtitle">Postdoctoral Researcher | Stable Isotope Geochemist | Paleoclimate</p>
+  </div>
+
+  <nav>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="cv.html">CV</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Welcome</h2>
+    <p>This site is under development. Please use the links above to explore individual sections of my academic work and background.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Matthew Allen</p>
+  </footer>
 </body>
 </html>
+

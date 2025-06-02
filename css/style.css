@@ -34,12 +34,22 @@ nav a:hover {
   text-decoration: underline;
 }
 
-h1, h2 {
+h1, {
   color: #003366;
+}
+
+h2 {
+  color: #90caf9;
 }
 
 section {
   margin-bottom: 3rem;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
 }
 
 footer {
