@@ -1,10 +1,19 @@
 Create a _config.yml
 
-title: "Your Name"
-description: "Your academic homepage"
-remote_theme: "mmistakes/minimal-mistakes"
+title: "Matthew Allen"
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-remote-theme
 
-
-  
+# Optional navigation
+nav:
+  - title: "About"
+    url: /about/
+  - title: "Research"
+    url: /research/
+  - title: "CV"
+    url: /cv/
+  - title: "Publications"
+    url: /publications/
+  - title: "Contact"
+    url: /contact/
