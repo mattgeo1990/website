@@ -1,0 +1,10 @@
+Create a _config.yml
+
+title: "Your Name"
+description: "Your academic homepage"
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-remote-theme
+
+
+  
