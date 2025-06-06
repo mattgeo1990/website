@@ -1,7 +1,7 @@
 Create a _config.yml
 
 title: "Matthew Allen"
-remote_theme: mmistakes/minimal-mistakes
+theme: jekyll-theme-primer
 plugins:
   - jekyll-remote-theme
 
